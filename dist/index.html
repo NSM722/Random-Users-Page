@@ -5,27 +5,29 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <!-- Flag icons CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/6.6.6/css/flag-icons.min.css"
-    integrity="sha512-uvXdJud8WaOlQFjlz9B15Yy2Au/bMAvz79F7Xa6OakCl2jvQPdHD0hb3dEqZRdSwG4/sknePXlE7GiarwA/9Wg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css" />
+
   <!-- Tailwind CSS-->
   <script src="https://cdn.tailwindcss.com"></script>
-  <title>Get Random Users</title>
+  <title>Get Random Users Data</title>
 </head>
 
-<body class="bg-slate-100 leading-relaxed font-serif text-neutral-800 p-6">
+<body class="bg-slate-100 leading-relaxed font-serif text-neutral-800 p-6 flex flex-col items-center">
   <header class="text-center tracking-wider font-extrabold text-4xl">
     <h1 class="uppercase">Get random users data</h1>
+    <button id="fetch-data-btn" aria-label="Get the Random Users Data from the Server"
+      class="text-lg text-slate-100 bg-slate-900 py-1 px-4 rounded-lg">Get Data</button>
   </header>
   <main class="mt-2">
-    <button id="fetch-data-btn" class="text-lg text-slate-100 bg-slate-900 py-1 px-4 rounded-lg">Get Info</button>
-    <!-- Randoms users info -->
-    <section id="container" class="flex justify-evenly items-center mt-2">
+    <section id="container" class="flex flex-wrap justify-evenly gap-6">
+      <!-- Randoms users info Cards -->
     </section>
   </main>
   <script src="index.js"></script>
